@@ -8,7 +8,7 @@ The dashboard breaks churn down by demographics, products, finances, and custome
 
 ## 📌 Project Overview
 
-The goal is to measure customer churn in a retail bank and identify the segments that drive it. The dashboard has three pages, each focused on one angle of the problem.
+The goal is to measure customer churn among 10,000 retail bank customers and identify the segments that drive it. The dashboard has three pages, each focused on one angle of the problem.
 
 ## 🎯 Business Objectives
 
@@ -67,33 +67,38 @@ The goal is to measure customer churn in a retail bank and identify the segments
 ## 📊 Dashboard Preview
 
 ### Page 1 – Overview
-![Overview](Screenshots/01-overview.png)
+![Overview](Screenshots/Screenshot%202026-10-26%20225204.png)
 
 ### Page 2 – Demographics
-![Demographics](Screenshots/02-demographics.png)
+![Demographics](Screenshots/Screenshot%202026-10-26%20225232.png)
 
 ### Page 3 – Products & Finance
-![Products & Finance](Screenshots/03-products-finance.png)
+![Products & Finance](Screenshots/Screenshot%202026-10-26%20225256.png)
 
 * * *
 
 ## 💡 Key Findings
 
-> ⚠️ Replace with the real numbers from your dashboard
-- Overall churn rate is **X%** (X churned out of X customers).
-- The age band **X–X** has the highest churn rate (**X%**).
-- **[Country]** has the highest churn rate among countries.
-- Customers with **X products** churn the most.
-- Inactive members churn **X times** more than active ones.
-- Churned customers took **X** in balance with them.
+- The overall churn rate is **20.4%**: about 2,000 of 10,000 customers left.
+- **Age is the strongest driver.** Customers aged 50–59 churn at **56.0%**, which is **2.75x** the overall risk. Churn is lowest at 18–29 (7.6%) and 30–39 (10.9%).
+- **Germany** has double the churn of the other countries (**32.4%** vs 16.7% in Spain and 16.2% in France).
+- **Women** churn more than men (**25.1%** vs 16.5%).
+- **Number of products matters a lot.** Customers with 3 products churn at **82.7%** and those with 4 products at **100%**, while customers with 2 products churn at only **7.6%**.
+- **Inactive members** churn at **26.9%**, almost twice the rate of active members (**14.3%**).
+- Churned customers took **186M** of the **765M** total balance (about 24%). The 40–49 age band accounts for the largest share (**73M**).
+- Card type, credit score, and satisfaction score show little difference in churn.
+
+## ⚠️ Data Note
+
+In this dataset, almost every customer who filed a complaint also left (**99.5%** churn among complainers), and the complaint rate (20.4%) equals the churn rate. This suggests the `Complain` field may be recorded after the customer has left, so it should not be treated as an early warning signal.
 
 ## 📈 Business Recommendations
 
-1. **Target high-risk age groups** with retention offers.
-2. **Re-engage inactive members** before they leave.
-3. **Review the product mix** for the segments with the highest churn.
-4. **Act fast on complaints** and track satisfaction scores.
-5. **Protect high-balance customers** first, since their loss costs the most.
+1. **Focus retention on customers aged 40–59**, the highest-risk group and the largest source of lost balance.
+2. **Investigate the German market** to find out why churn is double that of France and Spain.
+3. **Review the 3-4 product bundles**, since customers holding them almost always leave.
+4. **Re-engage inactive members** early, before they decide to leave.
+5. **Prioritize high-balance customers** in retention campaigns, since their loss costs the most.
 
 * * *
 
